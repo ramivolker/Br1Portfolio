@@ -222,4 +222,3 @@ cardArray.forEach((card)=>{
 window.addEventListener('resize',()=>{
     document.querySelector(".vp-h4").innerHTML = window.innerWidth;
 });
-

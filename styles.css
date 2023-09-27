@@ -1400,6 +1400,28 @@ header{
     .ft-subfooter-p{
         font-size: 14px;
     }
+
+    .cl-grid-item-wrapper{
+        width: 85vw;
+    }
+}
+
+@media (max-width:530px){
+    .cl-grid-item-title{
+        font-size: 1.2rem;
+    }
+
+    .cl-grid-item-p{
+        font-size: 15px;
+    }
+
+    .cl-grid-item-language{
+        font-size: 15px;
+    }
+
+    .cl-grid-item-info-wrapper{
+        padding-left: 1.2rem;
+    }
 }
 
 @media (max-width:502px){
@@ -1410,6 +1432,8 @@ header{
 
     .ft-wrapper{
         grid-template-columns:  40px 1fr 1fr 1.5fr;
+        column-gap: 0;
+        row-gap: 0;
     }
 
     .footer{
@@ -1428,5 +1452,55 @@ header{
     .ft-subfooter-p{
         font-size: 13px;
         margin-left: 1rem;
+    }
+
+    .ft-anchor-underlined{
+        width: 60px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+@media (max-width:422px){
+    .ft-subfooter{
+        flex-flow: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 2rem 4vw 2rem;
+    }
+
+    .ct-button-icon{
+        font-size: 1.5rem;
+        padding: 0.8rem;
+        width: 24px;
+        height: 24px;
+    }
+
+    .discordicon{
+        translate: -3px -1px;
+    }
+
+    .cl-grid-item-title{
+        font-size: 1rem;
+    }
+
+    .cl-grid-item-p{
+        font-size: 13px;
+    }
+
+    .cl-grid-item-language{
+        font-size: 13px;
+    }
+
+    .cl-grid-item-info-wrapper{
+        padding-left: 1rem;
+    }
+
+    .br1-h3{
+        margin-left: 2vw;
+    }
+
+    .header-dropdown-wrapper{
+        padding-right: 0;
     }
 }
