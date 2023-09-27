@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Roboto:wght@100;300&display=swap');
+
+@font-face{
+    font-family: nexa-heavy;
+    src: url(Nexa-Heavy.ttf) format("truetype");
+}
+
+@font-face{
+    font-family: organetto-boldcnd;
+    src: url(Fontspring-DEMO-organetto-ultracndbold.otf) format("truetype");
+}
+
+@font-face{
+    font-family: angroltlight;
+    src: url(Angro\ LT\ W01\ Light.ttf) format("truetype");
+}
+
+@font-face{
+    font-family: rafine-black;
+    src: url(Rafine\ Black.otf) format("truetype");
+}
+
+@font-face{
+    font-family: rafine-bold;
+    src: url(Rafine\ Bold.otf) format("truetype");
+}
+
+:root{
+    --softblack: #0f0f0f;
+    --hardwhite: #fefefe;
+    --softwhite: #aaa;
+    --gray: #222;
+    --softgray: #888;
+    --blue: #1d84e6;
+    --darkblue: #1665af;
+}
+
+.vids-sect{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    background-color: var(--hardwhite);
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem 0;
+}
+
+.header-dropdown{
+    opacity: 0;
+}
+
+.vids-vid{
+width: 50%;
+aspect-ratio: 16/9;
+}
+
+.vids-img{
+    width: 15%;
+    aspect-ratio: 1/1;
+}
+
+.vids-h4{
+    font-family: rafine-black;
+    color: var(--softblack);
+    font-size: 2.5rem;
+}
