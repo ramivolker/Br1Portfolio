@@ -216,3 +216,10 @@ cardArray.forEach((card)=>{
         window.location.pathname += "videoPages/" + card.children[1].children[0].innerText + ".html";
     })
 })
+
+// DETECTAR PX PANTALLA
+
+window.addEventListener('resize',()=>{
+    document.querySelector(".vp-h4").innerHTML = window.innerWidth;
+});
+
