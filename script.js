@@ -73,7 +73,6 @@ var tnChevronLeft = document.getElementsByClassName("tn-chevron")[0];
 var tnChevronRight = document.getElementsByClassName("tn-chevron")[1];
 var imgOptions = Array.from(document.getElementsByClassName("tn-img"));
 var tnWrapper = document.querySelector(".tn-wrapper");
-console.log(imgOptions);
 
 imgOptions.forEach(img => {
     img.addEventListener("click",(e)=>{
@@ -213,7 +212,7 @@ movbarAnchor.forEach((anchor)=>{
 cardArray.forEach((card)=>{
     card.addEventListener("click",(c)=>{
         console.log(card.children[1].children[0].innerText);
-        window.location.pathname += "videoPages/" + card.children[1].children[0].innerText + ".html";
+        window.location.pathname = "videoPages/" + card.children[1].children[0].innerText.replace(/\s/g, '') + ".html";
     })
 })
 
