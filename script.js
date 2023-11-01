@@ -2,6 +2,9 @@ wrapper = document.getElementsByClassName("vp-flex-wrapper")[0];
 let index = 0;
 rightcontrol = document.getElementsByClassName("vp-right-control")[0];
 leftcontrol = document.getElementsByClassName("vp-left-control")[0];
+controlswrapper = document.querySelector(".vp-controls-wrapper");
+
+//controlswrapper.setAttribute("style","height:"+wrapper.offsetHeight+"px");
 
 rightcontrol.addEventListener("click",()=>{
     rightcontrol.style.transition= "all 0.3s ease";
@@ -212,7 +215,7 @@ movbarAnchor.forEach((anchor)=>{
 cardArray.forEach((card)=>{
     card.addEventListener("click",(c)=>{
         console.log(card.children[1].children[0].innerText);
-        window.location.pathname = "Br1Portfolio/videoPages/" + card.children[1].children[0].innerText.replace(/\s/g, '') + ".html";
+        window.location.pathname += "videoPages/" + card.children[1].children[0].innerText.replace(/\s/g, '') + ".html";
     })
 })
 
