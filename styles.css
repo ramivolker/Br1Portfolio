@@ -1344,6 +1344,10 @@ header{
         padding: 2rem 4vw;
     }
 
+    .abt-h4{
+        margin-left: 6vw;
+    }
+
     .vp-card{
         min-width: 25vw;
         padding-bottom: 1rem;
@@ -1687,6 +1691,10 @@ header{
 
     .abt-description-contact-now{
         align-self: center;
+    }
+
+    .abt-description-p{
+        padding: 0 0.5rem;
     }
 
     .ft-subfooter{
