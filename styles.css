@@ -700,7 +700,7 @@ header{
 }
 
 .stats2-sect{
-    padding: 2rem 20vw 6rem 20vw;
+    padding: 4rem 20vw 6rem 20vw;
 }
 
 .stats2-vid-vertical{
@@ -1249,6 +1249,13 @@ header{
 }
 
 
+@media (max-width:1480px){
+    .header-navbar{
+        gap: 3vw;
+        margin: 0 4rem;
+    }
+}
+
 @media (max-width:1330px){
     .abt-sect{
         padding: 2rem 10vw;
@@ -1282,7 +1289,7 @@ header{
     }
 
     .stats2-sect{
-        padding: 2rem 10vw 6rem 10vw;
+        padding: 4rem 10vw 6rem 10vw;
     }
 
     .cl-h4{
@@ -1377,6 +1384,11 @@ header{
     .abt-productionvec{
         align-self: center;
     }
+
+    .header-navbar{
+        gap: 1.8vw;
+        margin: 0 3vw;
+    }
 }
 
 @media (max-width:1070px){
@@ -1413,6 +1425,59 @@ header{
 }
 
 @media (max-width:950px){
+    .movbar-burguer{
+        display: block;
+        padding: 6px;
+        margin: 0 3vw;
+    }
+
+    .br1-h3{
+        margin-left: calc(10vw - 6px);
+        margin-right: auto;
+    }
+
+    .header-navbar{
+        display: none;
+    }
+
+    .movbar-wrapper{
+        display: flex;
+        flex-flow: column;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        background-color: var(--gray);
+        z-index: 5;
+        gap: 3rem;
+        padding-top: 8rem;
+        align-items: center;
+        left:-120%;
+        transition: all 0.5s ease-out;
+    }
+
+    .movbar-a{
+        font-family: angroltlight;
+        color: var(--hardwhite);
+        font-size: 2rem;
+        font-weight: 900;
+        text-align: center;
+        cursor: pointer;
+        padding: 1rem 2.2rem;
+        text-underline-offset: 8px;
+        transition: all 0.3s ease;
+        position: relative;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border-radius: 12px;
+        user-select: none;
+    }
+
+    .movbar-a:hover{
+        background-color: var(--blue);
+        width: fit-content;
+        
+    }
+/* */
     .stats2-vid-info-creator{
         margin-left: 0;
     }
@@ -1483,7 +1548,7 @@ header{
     }
 
     .stats2-sect{
-        padding: 2rem 5vw 5rem 5vw;
+        padding: 4rem 5vw 5rem 5vw;
     }
 
     .stats2-vid-info-title{
@@ -1550,59 +1615,6 @@ header{
 
     .vp-right-control{
         height: calc(45vw * 9 / 16);
-    }
-
-    .movbar-burguer{
-        display: block;
-        padding: 6px;
-        margin: 0 3vw;
-    }
-
-    .br1-h3{
-        margin-left: calc(10vw - 6px);
-        margin-right: auto;
-    }
-
-    .header-navbar{
-        display: none;
-    }
-
-    .movbar-wrapper{
-        display: flex;
-        flex-flow: column;
-        position: fixed;
-        height: 100vh;
-        width: 100vw;
-        background-color: var(--gray);
-        z-index: 5;
-        gap: 3rem;
-        padding-top: 8rem;
-        align-items: center;
-        left:-120%;
-        transition: all 0.5s ease-out;
-    }
-
-    .movbar-a{
-        font-family: angroltlight;
-        color: var(--hardwhite);
-        font-size: 2rem;
-        font-weight: 900;
-        text-align: center;
-        cursor: pointer;
-        padding: 1rem 2.2rem;
-        text-underline-offset: 8px;
-        transition: all 0.3s ease;
-        position: relative;
-        text-decoration: none;
-        transition: all 0.3s ease;
-        border-radius: 12px;
-        user-select: none;
-    }
-
-    .movbar-a:hover{
-        background-color: var(--blue);
-        width: fit-content;
-        
     }
 
     .tn-imgs-options-wrapper{
