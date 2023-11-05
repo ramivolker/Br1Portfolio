@@ -215,7 +215,8 @@ movbarAnchor.forEach((anchor)=>{
 cardArray.forEach((card)=>{
     card.addEventListener("click",(c)=>{
         console.log(card.children[1].children[0].innerText);
-        window.location.pathname = "Br1Portfolio/videoPages/" + card.children[1].children[0].innerText.replace(/\s/g, '') + ".html";
+        window.location.pathname = "ndea/" + card.children[1].children[0].innerText.replace(/\s/g, '') + ".html";
+        //Br1Portfolio/videoPages
     })
 })
 
